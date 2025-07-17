@@ -1,0 +1,9 @@
+name = "sink"
+main = "src/index.js" # Or wherever your worker entry point is
+compatibility_date = "07-17-2025" # Or your current compatibility date
+
+[build]
+command = "npm run build" # If you have a build step
+
+[compatibility_flags]
+nodejs_compat = true # Add this line
