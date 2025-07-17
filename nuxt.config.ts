@@ -1,3 +1,5 @@
+// nuxt.config.ts
+
 import { provider } from 'std-env'
 import { currentLocales } from './i18n/i18n'
 
@@ -65,8 +67,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    // Add 'nodeCompat: true' to the existing experimental block
     experimental: {
       openAPI: true,
+      nodeCompat: true, // <--- ADD THIS LINE
     },
     timing: true,
     openAPI: {
